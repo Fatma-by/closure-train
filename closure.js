@@ -33,6 +33,8 @@ The function value is one new array.If the arrays are of unequal length, the out
 
 function zipwith(array1, array2) {
   let array=[];
+  let arr=[];
+  let ar=[];
   return {
     
     math: function(){
@@ -45,20 +47,20 @@ function zipwith(array1, array2) {
   maximun : function(){
     for (let index = 0; index < array1.length; index++) {
       if (array1[index]>array2[index]) {
-        array.push(array1[index]);}
+        arr.push(array1[index]);}
         else{
-          array.push(array2[index]);
+          arr.push(array2[index]);
         }
       }
-      return array;
+      return arr;
     },
    sum  : function() {
     for (let index = 0; index < array1.length; index++) {
-      array.push(array1[index]+array2[index]);
+      ar.push(array1[index]+array2[index]);
  
    
     }
-    return array;  
+    return ar;  
    }
    
   }
@@ -70,6 +72,10 @@ console.log(result.math());
 console.log(result.maximun());
 
 console.log(result.sum());
+
+
+
+
 
 
   
